@@ -1,0 +1,556 @@
+/*PC・スマホ共通スタイル*/
+
+body{
+  font-family:'Josefin Sans','Josefin Sans','Meiryo', Arial, sans-serif;
+}
+p{
+  font-size: 24px;
+}
+
+/*PCのスタイル*/
+
+@media screen and (min-width:768px) {
+  /*横幅設定*/
+body{
+  max-width: 1536px;
+  min-width: 900px;
+  margin: 0 ;
+}
+
+header{ 
+  position: fixed;
+  top:0;
+  right: 0;
+  width: 465px;
+  height: 87px;
+  background-color: #BAD5EE;
+  border-radius: 30px 0 30px 30px;
+  z-index: 50;
+}
+#nav-pc{
+ display: flex;
+ justify-content: space-between;
+ text-align: center; 
+ padding: 33px 50px 33px 50px;
+ font-size: 24px;
+ 
+}
+#nav-pc >a{ 
+  text-decoration-line: none;
+}
+a:link{
+  color: black;
+}
+a:hover{
+  opacity: 0.5;
+}
+a:active{
+  background-color:#7C9EB1;
+  opacity: 0.1;
+}
+
+a:visited{
+  color: black;
+}
+
+#TOP{
+  margin:0px 0px 65px 0px;
+  position: relative;
+}
+
+#TOP-image{
+  position: absolute;
+  right: 0;
+  top:0;
+  border-radius: 30px  30px 30px 30px;
+  z-index: 30;
+}
+.Top-left{
+  position: absolute;
+  left:0;
+  top:0;
+  width: 437px;
+  height: 868px;
+  background-color: #BAD5EE;
+  border-radius: 30px  30px 0 30px;
+  z-index: 40;
+}
+#stickarrow {
+  position: absolute;
+  top: 840px;
+  left: 720px;
+  z-index: 45;
+  animation: updown 2s infinite ease-in-out;
+}
+@keyframes updown {
+  0% {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(0, -30px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
+
+
+#scroll{
+  font-size: 14px;
+  position: absolute;
+  top: 800px;
+  left: 680px;
+  z-index: 45;
+}
+
+#TopName{
+  font-size: 48px;
+  text-align: center;
+  padding: 341px 107px 100px 107px;
+}
+#TopNameUnder{
+  font-family:  'Alike',Arial, sans-serif;
+  padding: 0 107px 184px 107px ;
+  font-size: 36px;
+  text-align: center;
+  opacity: 0.3;
+}
+
+
+
+h1{
+  font-size: 46px;
+  text-align: center;
+  text-decoration: underline solid black 0.5px;
+}
+
+#gallery-P{
+  text-align: center;
+}
+#gallery{
+  display: inline-block;
+  margin-top:932px;
+  padding-top: 29px; 
+  padding-bottom:  91px;
+  background-color: #ebf5ff;
+  width: 819px;
+}
+
+
+#gallery > section{
+  padding-top: 261px;
+}
+
+
+#gallery > section > a >img{
+  width: 475px;
+  height: 293px;
+}
+
+#banner > p{
+  font-weight: 500;
+}
+#banner > a > img{
+  padding-bottom: 50px;
+}
+
+
+
+#profile{
+  margin-top: 329px;
+  padding-top: 81px;
+  background-color: #CEE0F1;
+  width: 100%;
+  height: 939px;
+  position: relative;
+}
+
+#profile-img{
+  width: 360px;
+  height: 350px;
+  padding-top: 120px;
+  padding-left: 70px;
+
+}
+
+
+
+#profile > :nth-child(3){
+  font-size: 20px;
+  font-weight:bold;
+  position: absolute;
+  top:372px;
+  left:550px;
+}
+  
+
+#profile > :nth-child(4){
+  font-size: 20px;
+  font-weight: bold;
+  position: absolute;
+  top:725px;
+  left:550px;
+}
+
+#contact{
+  margin-top: 220px;
+  padding-top: 32px;
+  padding-bottom: 176px;
+  width: 100%;
+  background-color: #F0F5F9;
+}
+
+#contact-tool{
+  display: flex;
+  justify-content: center;
+  padding-top: 125px;
+}
+#contact > p{
+  width: 323px;
+  font-size: 12px;
+  font-family: 'Archivo Narrow','Meiryo', Arial, sans-serif;
+}
+
+#mail-img {
+  height: 40px;
+  padding-right: 73px;
+}
+#X-img{
+  height: 70px;
+  padding-top: 78px;
+}
+
+footer{
+  margin: 30px 0 30px 0;
+  text-align: center;
+  font-size: 12px;
+  font-family: 'Josefin Sans','Noto Serif JP','Meiryo', Arial, sans-serif;
+}
+
+
+
+
+
+/*ギャラリー各ページ*/
+.g-top{
+  text-align: center;
+  background-color: #EBF5FF;
+  margin-top: none;
+  width: 100%;
+}
+
+.g-top > h1{
+  padding-top: 79px;
+}
+
+
+
+.g-top-img{
+  width: 475px;
+  height: 293px;
+  box-shadow:  36px 36px 0 0 #BAD5EE;
+  margin: 0 50px 0 50px;
+}
+
+
+.g-top > p{
+  padding-top: 79px;
+  padding-bottom: 90px;
+}
+
+
+.g-child > h1{
+  padding-top: 83px;
+  padding-bottom: 66px;
+}
+
+.g-img{
+  display: flex;
+  justify-content: center;
+}
+
+.g-img img{
+  padding: 0 30px 232px 30px;
+  width: 225px;
+}
+}
+
+
+
+
+
+
+
+ /*====================
+  スマートフォン用のスタイル
+  =====================*/
+  @media screen and (max-width: 768px) {
+  
+
+    body {
+      min-width: 375px;
+      margin: 0;
+    }
+
+
+
+    header{ 
+      position: fixed;
+      top:0;
+      right: 0;
+      width: 10em;
+      height: 2em;
+      background-color: #BAD5EE;
+      border-radius: 30px 0 30px 30px;
+      z-index: 50;
+    }
+    #nav-pc{
+     display: flex;
+     justify-content: space-between;
+     text-align: center; 
+     padding:  10px 15px 10px 15px;
+     font-size: 8px;
+     
+    }
+    #nav-pc >a{ 
+      text-decoration-line: none;
+    }
+    a:link{
+      color: black;
+    }
+    a:hover{
+      opacity: 0.5;
+    }
+    a:active{
+      background-color:#7C9EB1;
+      opacity: 0.1;
+    }
+    
+    a:visited{
+      color: black;
+    }
+    
+    #TOP{
+      margin:0px 0px 65px 0px;
+      position: relative;
+    }
+    
+    #TOP-image{
+      position: absolute;
+      right: 0;
+      top:0;
+      width: 95%;
+      height: 20em;
+      border-radius: 30px  30px 30px 30px;
+      z-index: 30;
+    }
+    .Top-left{
+      position: absolute;
+      left:0;
+      top:0;
+      width: 8em;
+      height: 20em;
+      background-color: #BAD5EE;
+      border-radius: 30px  30px 0 30px;
+      z-index: 40;
+    }
+    #stickarrow {
+      position: absolute;
+      top: 20em;
+      left: 13em;
+      width: 0.5em;
+      height: 1.5em;
+      z-index: 45;
+      animation: updown 2s infinite ease-in-out;
+    }
+    @keyframes updown {
+      0% {
+        transform: translate(0, 0);
+      }
+      50% {
+        transform: translate(0, -30px);
+      }
+      100% {
+        transform: translate(0, 0);
+      }
+    }
+    
+    #scroll{
+      font-size: 7px;
+      position: absolute;
+      top: 39em;
+      left: 29em;
+      z-index: 45;
+    }
+    
+    #TopName{
+      font-size: 16px;
+      text-align: center;
+      padding: 6em 4.5em 3em 1.5em;
+    }
+    #TopNameUnder{
+      font-family:  'Alike',Arial, sans-serif;
+      padding: 0  4.5em 3em 2.5em ;
+      font-size: 15px;
+      text-align: center;
+      opacity: 0.3;
+    }
+    
+    
+    
+    h1{
+      font-size: 14px;
+      text-align: center;
+      text-decoration: underline solid black 0.5px;
+    }
+    
+    #gallery-P{
+      text-align: center;
+    }
+    #gallery{
+      display: inline-block;
+      margin-top:23em;
+      padding-top: 29px; 
+      padding-bottom:  91px;
+      background-color: #ebf5ff;
+      width: 100%;
+    }
+
+    #gallery p{
+      font-size: 1em;
+    }
+    
+    #gallery > section{
+      padding-top: 5em;
+    }
+    
+    
+    #gallery > section > a >img{
+      width: 15em;
+      height: 10em;
+    }
+    
+    #banner > p{
+      font-weight: 500;
+    }
+    #banner > a > img{
+      padding-bottom: 20px;
+    }
+    
+    
+    
+    #profile{
+      margin-top: 5em;
+      padding-top: 1em;
+      background-color: #CEE0F1;
+      width: 100%;
+      height: 15em;
+      position: relative;
+    }
+    
+    #profile-img{
+      width: 8em;
+      height: 8em;
+      padding-top: 1em;
+      padding-left: 1em;
+    
+    }
+    
+    #profile > :nth-child(3){
+      font-size: 8px;
+      font-weight:bold;
+      position: absolute;
+      top:12em;
+      left:23em; 
+      }
+    
+    #profile > :nth-child(4){
+      font-size: 8px;
+      font-weight: bold;
+      position: absolute;
+      top:24em;
+      left:23em;
+      }
+    
+    #contact{
+      margin-top:2em;
+      padding-top: 1em;
+      padding-bottom: 1em;
+      width: 100%;
+      background-color: #F0F5F9;
+    }
+    
+    #contact-tool{
+      display: flex;
+      justify-content: center;
+      padding-top: 1em;
+    }
+    #contact p{
+      font-size: 8px;
+    }
+    
+    #mail-img {
+      height: 1em;
+      padding-right: 1em;
+    }
+    #X-img{
+      height: 1em;
+      padding-top: 1em;
+    }
+    
+    footer{
+      margin: 1em 0 1em 0;
+      text-align: center;
+      font-size: 8px;
+      font-family: 'Josefin Sans','Noto Serif JP','Meiryo', Arial, sans-serif;
+    }
+    
+    
+    
+    
+    
+    /*ギャラリー各ページ*/
+    .g-top{
+      text-align: center;
+      background-color: #EBF5FF;
+      margin-top: none;
+      width: 100%;
+    }
+    
+    .g-top > h1{
+      padding-top: 2em;
+    }
+    
+    
+    
+    .g-top-img{
+      width: 4em;
+      height: 3em;
+      box-shadow:  0.5em 0.5em 0 0 #BAD5EE;
+      margin: 0 50px 0 50px;
+    }
+    
+    
+    .g-top > p{
+      font-size: 8px;
+      padding-top: 1em;
+      padding-bottom: 2em;
+    }
+    
+    
+    .g-child > h1{
+      padding-top: 1em;
+      padding-bottom: 1em;
+    }
+    
+    .g-img{
+      display: flex;
+      justify-content: center;
+    }
+    
+    .g-img img{
+      padding: 0 1em 3em 1em;
+      width: 3em;
+    }
+
+  }
